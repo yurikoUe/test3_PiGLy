@@ -1,0 +1,59 @@
+/* ページネーション全体のスタイル */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ページネーションリンクのスタイル */
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #007bff;
+    font-size: 14px;
+}
+
+/* アクティブなページのスタイル */
+.pagination .active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* ホバー時のスタイル */
+.pagination a:hover {
+    background-color: #f1f1f1;
+}
+
+/* 非アクティブページリンクのスタイル */
+.pagination .disabled {
+    color: #ccc;
+    pointer-events: none;
+}
+
+/* 最初と最後のページリンクのスタイル */
+.pagination .first,
+.pagination .last {
+    font-weight: bold;
+}
+
+/* ページネーション内の矢印 */
+.pagination .prev,
+.pagination .next {
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 直前、次への矢印をホバーした際のスタイル */
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #f1f1f1;
+}
