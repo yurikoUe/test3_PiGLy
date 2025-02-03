@@ -5,9 +5,9 @@
 ### Dockerビルド
 1. プロジェクトのルートディレクトリに移動し、以下のコマンドでクローンします</br>
 HTTP形式：
-`git clone https://github.com/yurikoUe/test2_Mogitate.git`  
+`git clone https://github.com/yurikoUe/test3_PiGLy.git`  
 SSH形式：
-`git clone git@github.com:yurikoUe/test2_Mogitate.git`
+`git clone git@github.com:yurikoUe/test3_PiGLy.git`
 
 2. `docker-compose up -d --build`
 >MacのM1・M2チップのPCの場合、`no matching manifest for linux/arm64/v8 in the manifest list entries`のメッセージが表示され、ビルドができないことがあります。エラーが発生した場合は、docker-compose.ymlファイルの「mysql」の記述箇所に、platformの項目を追加で記載し、もう一度ビルドしてください。
@@ -65,7 +65,7 @@ DB_PASSWORD=laravel_pass
 
 以下は、プロジェクトのER図です。
 
-![ER図](./docs/er_diagram.png)
+![ER図](./docs/ER_pigly.png)
 
 
 ## URL
