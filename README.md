@@ -40,15 +40,11 @@ DB_PASSWORD=laravel_pass
 
 `php artisan key:generate`
 
-6. シンボリックリンクの作成をします
-
-`php artisan storage:link`
-
-7. マイグレーションの実行をします
+6. マイグレーションの実行をします
 
 `php artisan migrate`
 
-8. シーディングの実行
+7. シーディングの実行
 
 `php artisan db:seed`
 
