@@ -45,7 +45,7 @@ DB_PASSWORD=laravel_pass
 
 `php artisan migrate`
 
-6. シーディングの実行
+7. シーディングの実行
 
 `php artisan db:seed`
 
