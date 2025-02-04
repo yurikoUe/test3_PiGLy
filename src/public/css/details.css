@@ -1,0 +1,125 @@
+.weight-logs {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.weight-log__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.weight-log__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.weight-log__label {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.weight-log__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.weight-log__input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weight-log__unit {
+    font-size: 14px;
+    color: #555;
+    width: 5%;
+}
+
+.weight-log__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weight-log__back-link {
+    width: 150px;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.weight-log__submit-button {
+    width: 150px;
+    padding: 10px;
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.weight-log__delete-form {
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+}
+
+.weight-log__delete-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.weight-log__delete-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+textarea.weight-log__input {
+    height: 80px;
+    resize: none;
+}
+
+.weight-log__form input[type="time"] {
+    max-width: 200px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .weight-log__back-link,
+    .weight-log__submit-button {
+        width: 100%;
+    }
+}

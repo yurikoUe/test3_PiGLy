@@ -1,76 +1,161 @@
-/* モーダル */
+/* モーダルの背景オーバーレイ */
 .modal {
     display: none;
+    /* 初期状態は非表示 */
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1001;
-    /* モーダルがオーバーレイより前に表示されるように */
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(192, 190, 190, 0.5);
+    /* 半透明の黒背景 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-body.modal-open {
-    background-color: rgba(0, 0, 0, 0.5);
-    /* グレーのオーバーレイ */
+.modal:target {
+    display: flex;
+    /* モーダルがターゲットされると表示 */
 }
 
+/* モーダルの内容部分 */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 20px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+/* モーダルのタイトル */
+.modal__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* モーダルのフォームラベル */
+.modal__label {
+    display: block;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* 必須マーク */
+.modal__required {
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    font-size: 10px;
+    padding: 3px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* モーダルの入力フィールド */
+.modal__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modal__input--unit{
+    width: 20%;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.modal__input--with-unit{
+    display: flex;
+}
+
+/* エラーメッセージ */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* モーダルの送信ボタン */
+.modal__submit-button {
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+    margin-left: 20%;
+}
+
+.modal__submit-button:hover {
+    background: pink;
+}
+
+/* モーダルのオーバーレイ部分 */
 .modal-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: block;
-    z-index: 1000;
-    /* オーバーレイのz-indexを一番下に */
+    background: rgba(0, 0, 0, 0.5);
+    /* 半透明の黒背景 */
 }
 
-
-
-.modal.modal-open {
-    display: block;
-}
-
-.modal:target {
-    display: flex;
-}
-
-.modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px;
-    z-index: 1002;
-    /* コンテンツ部分を最前面に */
-}
-
+/* モーダルを閉じるためのリンク */
 .close-modal {
-    display: block;
-    margin-top: 10px;
-    color: red;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #000;
     text-decoration: none;
 }
 
-
-
-.modal__inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    border: 1px solid #8B7969;
-    background-color: #fff;
-    box-shadow: 4px 4px 4px rgba(139, 121, 105, 0.25);
-    transform: translate(-50%, -50%);
+.close-modal:hover {
+    color: #ff0000;
 }
 
-/* モーダルウィンドウ中のスタイル */
-.default-time[value="00:00"] {
+/* モーダル内のリンクを閉じるボタン */
+.weight-log__open-modal {
+    text-decoration: none;
+    background-color: #007bff;
     color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
-.error {
-    color: #e74c3c;
-    font-size: 0.9em;
+.weight-log__open-modal:hover {
+    background-color: #0056b3;
+}
+
+/* レスポンシブデザイン：モーダルが小さい画面でも見やすく */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal__title {
+        font-size: 20px;
+    }
+
+    .modal__input--left {
+        font-size: 14px;
+    }
+
+    .modal__submit-button {
+        font-size: 14px;
+    }
 }

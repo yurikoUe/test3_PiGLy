@@ -1,0 +1,130 @@
+/* サマリー */
+.weight-log__summary{
+    display: flex;
+    justify-content: center;
+}
+
+.weight-log__summary-item{
+    padding: 0 50px;
+    margin: 30px;
+}
+
+.weight-log__summary-item:nth-child(2) {
+    border-left: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+}
+
+.weight-log__value{
+    display: flex;
+    align-items: center;
+}
+
+.weight-log__label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.weight-log__value-data{
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* 検索 */
+.weight-log__search{
+    padding: 0 20px;
+}
+
+.weight-log__search-form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.weight-log__search-form--left{
+    display: flex;
+}
+
+.weight-log__search-input{
+    padding: 5px;
+    width: 200px;
+    margin: 0 10px;
+    height: 40px;
+    border: 1px solid #e1d3f6;
+    border-radius: 4px;
+    color: #ccc;
+}
+
+.weight-log__search-button{
+    height: 40px;
+    width: 60px;
+    color: white;
+    border: none;
+    background-color: #919191;
+    border-radius: 4px;
+}
+
+.weight-log__search-results{
+    display: flex;
+    padding: 0 20px;
+}
+
+.weight-log__search-period{
+    font-size: 14px;
+    width: 40%;
+    text-align: center;
+
+}
+
+.weight-log__search-reset{
+    height: 40px;
+    width: 80px;
+    color: #919191;
+    border: 1px solid #919191;
+    background-color: white;
+    border-radius: 4px;
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.weight-log__open-modal {
+    display: inline-block;
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* テーブル */
+.weight-log__table{
+    margin: 50px 30px;
+    width: 90%;
+}
+
+.weight-log__table-header {
+    border-bottom: 2px solid #e1d3f6;
+    text-align: ;
+}
+
+.weight-log__table-row{
+    text-align: center;
+}
+
+.weight-log__table-header-item {
+    padding: 10px;
+}
+
+.weight-log__table-row:hover {
+    background-color: #f9f9f9;
+}
+
+.weight-log__table-cell {
+    padding: 12px 15px;
+}

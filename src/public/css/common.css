@@ -1,3 +1,51 @@
+.header {
+    align-items: center;
+    padding: 20px 20px 5px;
+}
+
+.header__logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__nav-link {
+    margin-right: 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 4px 8px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    
+}
+
+.header__nav-button {
+    padding: 4px 8px;
+    background-color: f7f7f7;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid black;
+    
+    /* ホバー時のカーソルをポインタに */
+}
+
+.header__line {
+    height: 3px;
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+}
+
+
+
 /* ページネーション全体のスタイル */
 .pagination {
     display: flex;
@@ -14,22 +62,21 @@
     padding: 8px 16px;
     margin: 0 4px;
     text-decoration: none;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    color: #007bff;
     font-size: 14px;
 }
 
 /* アクティブなページのスタイル */
 .pagination .active {
-    background-color: #007bff;
     color: white;
-    border-color: #007bff;
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+    border-radius: 5px;
 }
 
 /* ホバー時のスタイル */
 .pagination a:hover {
-    background-color: #f1f1f1;
+    color: white;
+    background: grey;
 }
 
 /* 非アクティブページリンクのスタイル */

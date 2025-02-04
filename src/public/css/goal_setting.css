@@ -1,0 +1,88 @@
+/* goal_setting.css */
+
+.goal-setting {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.goal-setting__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.goal-setting__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.goal-setting__label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.goal-setting__input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.goal-setting__input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.goal-setting__unit {
+    font-size: 1rem;
+    color: #666;
+}
+
+.goal-setting__error {
+    color: #d9534f;
+    font-size: 0.875rem;
+}
+
+.goal-setting__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal-setting__back-link {
+    text-decoration: none;
+    font-size: 0.875rem;
+    text-decoration: none;
+    background-color: #ccc;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.goal-setting__submit-button {
+    width: 150px;
+    padding: 10px;
+    background: linear-gradient(to right, #A3a6e1, #fdabd9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.goal-setting__message {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+}

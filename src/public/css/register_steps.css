@@ -3,7 +3,7 @@
     min-height: 100vh;
 }
 
-.login-form {
+.register-form {
     background-color: white;
     border-radius: 30px;
     padding: 30px;
@@ -12,42 +12,47 @@
     text-align: center;
 }
 
-.login-form__title {
+.register-form__title {
     font-size: 30px;
     margin: 0px;
 }
 
-.login-form__container {
+.register-form__step{
+    margin: 0px auto 30px;
+}
+
+.register-form__container{
+    
     padding: 0 20px;
     align-items: center;
 }
 
-.login-form__label {
+.register-form__label{
     display: block;
     margin-top: 20px;
     font-weight: bold;
     text-align: left;
 }
 
-.login-form__input {
+.register-form__input{
     width: 100%;
     padding: 10px;
     border: 1px solid #e1d3f6;
     border-radius: 4px;
 }
 
-.login-form__error {
+.register-form__error{
     color: red;
     font-size: 14px;
     text-align: left;
 }
 
-.login-form__button,
-.login-form__link {
+.register-form__button,
+.register-form__link {
     margin: 20px auto 10px;
 }
 
-.login-form__button {
+.register-form__button {
     display: block;
     width: 150px;
     padding: 10px;
@@ -60,9 +65,19 @@
     font-weight: bold;
 }
 
-.login-form__link {
+.register-form__link {
     text-decoration: none;
     color: #86a8e7;
     text-decoration: underlinep;
 }
 
+.register-form__input-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.register-form__unit {
+    font-weight: normal;
+    color: #333;
+    width: 10%;
+}
